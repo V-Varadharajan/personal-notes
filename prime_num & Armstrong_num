@@ -1,0 +1,43 @@
+import java.util.*;
+
+class Demo {
+    public static void main(String[] args) {
+      Scanner in = new Scanner(System.in);
+      System.out.println("Armstrong number ...");
+       for(int i =100; i < 1000; i++) {
+           if(Arm(i)){
+               System.out.println(i + " ");
+           }
+       }
+      System.out.println("Enter a number for to check whether to check it is Prime Number or not! ...");
+      int n = in.nextInt();
+      boolean val = primenum(n);
+      System.out.println(val);
+        }
+        
+        static boolean Arm(int n) {
+            int o = n;
+            int sum = 0;
+            
+            while(n >0) {
+                int a = n % 10;
+                n = n / 10;
+                sum = sum + a*a*a;
+            }
+            return sum == o; 
+        }
+        
+        static boolean primenum(int n) {
+            if(n <= 1 || n == 2) {
+                return false;
+            }
+            int c = 2;
+            while(c * c <=n) {
+                if(n % c == 0) {
+                    return false;
+                }
+                c++;
+            }
+            return (c*c > n);
+        }
+    }
