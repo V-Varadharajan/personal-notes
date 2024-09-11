@@ -41,3 +41,26 @@ class Demo {
             return (c*c > n);
         }
     }
+
+
+
+// Armstrong number 1 to 1000 
+import java.util.*;
+
+class arm {
+    public static void main(String[] args) {
+        int i,sum = 0, b =0, n;
+        for(i = 0; i < 1000;i++) {
+            n = i;
+            while(n > 0) {
+                b= n % 10;
+                sum = sum + (b* b* b);
+                n = n/ 10;
+            }
+            if(sum == i) {
+                System.out.print(" " + i);
+            }
+            sum = 0;
+        }
+    }
+}
