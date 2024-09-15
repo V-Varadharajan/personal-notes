@@ -64,3 +64,28 @@ class arm {
         }
     }
 }
+
+
+//Prime number 1 to 100
+class prim {
+    public static void main(String[] args) {
+        for(int i = 0; i < 100; i++) {
+            boolean isCheck = true;
+            while(i <= 1 || i == 0) {
+                isCheck = false;
+                break;
+            }
+            int c = 2;
+            while(c*c <= i) {
+                if(i%c == 0) {
+                    isCheck = false;
+                    break;
+                }
+                c++;
+            }
+            if(isCheck) {
+                System.out.print(i+" "); 
+            }
+    }
+}
+}
