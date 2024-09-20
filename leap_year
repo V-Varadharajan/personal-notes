@@ -1,0 +1,22 @@
+import java.util.*;
+
+class leap {
+    public static void main(String[] args) {
+        int a = 2400, b = 0;
+        boolean is = false; 
+        if(a%4 == 0) {
+            if(a%100 == 0) {
+                if(a%400 ==0) {
+                    is = true;
+                }
+            } else {
+            is = true;
+        }  
+        }
+        if(is) {
+            System.out.print(a + " leap year");
+        } else {
+            System.out.print(a + " not leap year");
+        }
+    }
+}
