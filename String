@@ -1,0 +1,21 @@
+import java.util.*;
+
+class String_char_check {
+    public static void main(String[] args) {
+        String a = "abcdef";
+        boolean is = false;
+        Scanner in = new Scanner(System.in);
+        char b = in.next().charAt(0);
+        for(int i =0; i<a.length();i++) { //when calling method for length then there we need to denote the ()-parentheses 
+            if(b == a.charAt(i)) {
+                is = true;
+                break;
+            } 
+        }
+            if(is) {
+                System.out.println("got! " + b);
+            } else {
+                System.out.println("Not got! ");
+            }
+    }
+}
