@@ -19,3 +19,16 @@ class String_char_check {
             }
     }
 }
+
+
+//Reverse of string added 
+import java.util.*;
+
+class String_reverse {
+    public static void main(String[] args) {
+        String a = "abcdef";
+        for(int i =a.length() -1;i>-1 ;i--) {
+            System.out.print(a.charAt(i));
+        }
+    }
+}
