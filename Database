@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Database {
+    int a;
+    String b;
+    void display(){
+        System.out.println("Role number :" + a);
+        System.out.println("Name number :" + b);
+        System.out.println();
+    }
+    static int i;
+    static int value() {
+        i++;
+        return i;
+    }
+    public static void main(String[] args) {
+        Database ad1 = new Database();
+        ad1.a = 10;
+        ad1.b = "hari";
+        System.out.println(value());
+        ad1.display();
+        Database ad2 = new Database();
+        ad2.a = 23;
+        ad2.b = "varadha";
+        System.out.println(value());
+        ad2.display();
+    }
+}
