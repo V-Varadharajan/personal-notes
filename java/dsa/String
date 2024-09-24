@@ -52,3 +52,22 @@ class HelloWorld {
        System.out.println(a.toCharArray()); //abcd
     }
 }
+
+//program to check the char inside String
+import java.util.*;
+
+class check_array {
+    static boolean sample(String a,char b) {
+        for(int i = 0;i<a.length();i++) {
+            if(a.charAt(i) == b) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String[] args) {
+       String a = "abcd";
+       char b = 'z';
+       System.out.println(sample(a,b));
+    }
+}
