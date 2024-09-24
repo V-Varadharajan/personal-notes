@@ -1,0 +1,62 @@
+1. Document Structure & Metadata
+<html> – Root element of an HTML document.
+<head> – Contains metadata, links to stylesheets, and other information for the document.
+<meta> – Provides metadata about the HTML document (charset, viewport, etc.).
+<title> – Sets the title of the web page (shown on the browser tab).
+<link> – Links external resources (usually stylesheets).
+<style> – Embeds internal CSS styles.
+<script> – Embeds or references a JavaScript code.
+
+2. Content Structure
+<body> – Contains the visible content of the HTML document.
+<header> – Represents the introductory content or set of navigational links.
+<nav> – Defines navigation links.
+<section> – Defines a section in a document.
+<article> – Represents an independent piece of content.
+<aside> – Defines content related to the main content, such as sidebars.
+<footer> – Defines the footer for a section or page.
+<div> – Defines a block-level division or section (common for layout).
+<span> – Defines an inline section.
+
+3. Text Formatting & Headings
+<h1> to <h6> – Defines headings from highest importance (<h1>) to lowest (<h6>).
+<p> – Defines a paragraph.
+<strong> – Displays text in bold, indicating strong importance.
+<em> – Displays text in italics, indicating emphasis.
+<b> – Boldens text (for stylistic purposes).
+<i> – Italicizes text (for stylistic purposes).
+<br> – Inserts a line break.
+<hr> – Inserts a horizontal line (thematic break).
+
+4. Lists
+<ul> – Creates an unordered list (bulleted).
+<ol> – Creates an ordered list (numbered).
+<li> – Defines a list item within <ul> or <ol>.
+5. Links & Media
+<a> – Defines a hyperlink.
+<img> – Embeds an image.
+<audio> – Embeds audio content.
+<video> – Embeds video content.
+<source> – Defines media resources for media elements (<audio> and <video>).
+<figure> – Specifies self-contained content like images, diagrams, or code blocks.
+<figcaption> – Provides a caption for the <figure> element.
+<iframe> – Embeds another HTML page within the current page.
+<canvas> – Used for drawing graphics via JavaScript.
+
+6. Tables
+<table> – Defines a table.
+<thead> – Groups the header content in a table.
+<tbody> – Groups the body content in a table.
+<tfoot> – Groups the footer content in a table.
+<tr> – Defines a row in a table.
+<th> – Defines a header cell in a table.
+<td> – Defines a standard cell in a table.
+
+7. Forms & Inputs
+<form> – Creates a form for user input.
+<input> – Defines an input control (text fields, checkboxes, etc.).
+<button> – Creates a clickable button.
+<label> – Associates a label with a form element.
+<textarea> – Creates a multi-line text input area.
+<select> – Creates a dropdown list.
+<option> – Defines an option within a dropdown list.
