@@ -1,0 +1,23 @@
+import java.util.*;
+
+class HelloWorld {
+int a, b, c;  //state variable 
+
+HelloWorld() {  //constructor
+ a = 10;
+ b = 20;
+ c = a+b;
+}
+void value() {  //This method just execution code!,So does not require any return type..
+    System.out.println("Good you got me! : "+ c);
+}
+
+static void sum() { Object method which is used to call the value, does not require but for to encapsulate or abstract we can have a method for to call value..
+    HelloWorld is = new HelloWorld();  //creating object to call the class method..
+    is.value();
+}
+
+    public static void main(String[] args) {
+       sum(); //calling sum method
+    }
+}
