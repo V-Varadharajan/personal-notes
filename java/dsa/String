@@ -33,10 +33,10 @@ class String_reverse {
     }
 }
 
-
 // variable.toCharArray() - used for to print each element of any String using an array
 // variable.charAt(index) - used for to print single element of char in String
-// Arrays.toString(variable.toCharArray()) -used to convert format of the String - Array - char 
+// Arrays.toString(variable.toCharArray()) -used to convert format of the Array - char 
+// Arrays.toString(variable(int)) - used to convert any format to Array (int - Array)
 
 //Sample use of each type
 import java.util.*;
@@ -44,11 +44,11 @@ import java.util.*;
 class HelloWorld {
     public static void main(String[] args) {
        String a = "abcd";
-       System.out.println(Arrays.toString(a.toCharArray()));
+       System.out.println(Arrays.toString(a.toCharArray()));   //[a, b, c, d]
        for(int i = 0;i<a.length();i++) {
-        System.out.print(a.charAt(i)+" ");
+        System.out.print(a.charAt(i)+" ");  //a b c d 
        }
        System.out.println();
-       System.out.println(a.toCharArray());
+       System.out.println(a.toCharArray()); //abcd
     }
 }
