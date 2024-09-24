@@ -71,3 +71,27 @@ class check_array {
        System.out.println(sample(a,b));
     }
 }
+
+//Searching char in fixed length of string
+import java.util.*;
+
+class check_array {
+    public static void main(String[] args) {
+       String a = "abcdefg";
+       boolean is =false;
+       char target = 'a';
+       int b = 1, c = a.length() -1;
+       for(int i = b;i<=c;i++) {
+           if(a.charAt(i) == target) {
+               is = true;
+               break;
+           }
+        is = false;
+       }
+       if(is ==true) {
+           System.out.print("got : " + target);
+       } else {
+           System.out.print(target + " : notgot!");
+       }
+    }
+}
