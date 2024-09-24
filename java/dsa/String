@@ -36,3 +36,19 @@ class String_reverse {
 
 // variable.toCharArray() - used for to print each element of any String using an array
 // variable.charAt(index) - used for to print single element of char in String
+// Arrays.toString(variable.toCharArray()) -used to convert format of the String - Array - char 
+
+//Sample use of each type
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+       String a = "abcd";
+       System.out.println(Arrays.toString(a.toCharArray()));
+       for(int i = 0;i<a.length();i++) {
+        System.out.print(a.charAt(i)+" ");
+       }
+       System.out.println();
+       System.out.println(a.toCharArray());
+    }
+}
