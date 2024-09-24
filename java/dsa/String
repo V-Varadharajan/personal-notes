@@ -32,3 +32,7 @@ class String_reverse {
         }
     }
 }
+
+
+// variable.toCharArray() - used for to print each element of any String using an array
+// variable.charAt(index) - used for to print single element of char in String
