@@ -1,0 +1,52 @@
+//leetcode program - Digit counter(Method)
+import java.util.*;
+
+class check_array {
+    public static void main(String[] args) {
+       int[] arr = {123,24,56,875,32,511,41};
+       System.out.println(logic(arr));
+    }
+    
+    static int logic(int[] arr) {
+        int count = 0;
+        for(int ele : arr) {
+            if(even(ele)) {
+                count++;
+            }
+        }
+        return count;
+    }
+    static boolean even(int num) {
+        int nub = nums(num);
+        return nub % 2==0;
+    }
+    static int nums(int num) {
+        int count = 0;
+        while(num>0) {
+            count++;
+            num =num /10;
+        }
+        return count;
+    }
+}
+
+//leetcode program - Digit counter(Only Main)
+class Demo {
+    public static void main(String[] args) {
+        int[] arr = {12, 2, 345, 5678, 232};
+        int count = 0;
+
+        for (int ele : arr) {
+            int digitCount = 0, num = ele;
+            while(num > 0) {
+                digitCount++;
+                num = num/10; 
+            }
+            if(digitCount %2 ==0){
+                count++;
+            }
+}
+        System.out.println("Count of numbers with even digits: " + count);
+    }
+    
+}
