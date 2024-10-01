@@ -50,3 +50,94 @@ class Demo {
     }
     
 }
+
+
+//Tow sum -https://leetcode.com/problems/two-sum/
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i = 0; i<nums.length;i++) {
+            for(int j = i+1;j<nums.length;j++) {
+                if(nums[i] + nums[j] == target) {
+                    return new int[] {i,j};
+                }
+            }
+        }
+        return null;
+    }
+}
+
+//palindrome - https://leetcode.com/problems/palindrome-number/description/
+class Solution {
+    public boolean isPalindrome(int x) {
+        int val = 0,mul =0, o = x;
+        while(x>0) {
+            val = x%10;
+            mul = (mul*10) + val;
+            x = x/10;
+        }
+        if(o == mul) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+//Roman to numbers - https://leetcode.com/problems/roman-to-integer/
+class Solution {
+    public int romanToInt(String s) {
+        HashMap<Character, Integer> roadmap = new HashMap<>();
+        roadmap.put('I', 1);
+        roadmap.put('V', 5);
+        roadmap.put('X', 10);
+        roadmap.put('L', 50);
+        roadmap.put('C', 100);
+        roadmap.put('D', 500);
+        roadmap.put('M', 1000);
+        int res = 0;
+        int len = s.length();
+
+        for(int i = 0; i < len; i++) {
+            int val = roadmap.get(s.charAt(i));
+
+            if(i < len -1 && val < roadmap.get(s.charAt(i + 1))) {
+                res -= val; 
+            } else {
+                res += val;
+            }
+        }
+        return res;
+    }
+}
+//alternative method
+class Solution {
+    public int romanToInt(String s) {
+        // Mapping of Roman numerals to their integer values
+        int[] values = new int[128];
+        values['I'] = 1;
+        values['V'] = 5;
+        values['X'] = 10;
+        values['L'] = 50;
+        values['C'] = 100;
+        values['D'] = 500;
+        values['M'] = 1000;
+
+        int total = 0;
+        int prevValue = 0;
+
+        // Iterate through the string from right to left
+        for (int i = s.length() - 1; i >= 0; i--) {
+            int currentValue = values[s.charAt(i)];
+
+            // If the current value is less than the previous value, subtract it
+            if (currentValue < prevValue) {
+                total -= currentValue;
+            } else {
+                total += currentValue;
+            }
+            prevValue = currentValue;
+        }
+
+        return total;
+    }
+}
