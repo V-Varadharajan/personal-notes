@@ -6,9 +6,9 @@ class Char {
     }
 
     static int Export(char[] arr) {
-        int max = 0;
+        int max = arr[0];
         for(int i =0;i<arr.length; i++) {
-            if(i < arr[max]) {
+            if(max < arr[i]) {
                 max = i;
             }
         }
