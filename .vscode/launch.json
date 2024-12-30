@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "roman",
+            "request": "launch",
+            "mainClass": "roman",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "prime_num",
+            "request": "launch",
+            "mainClass": "prime_num",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "sample",
+            "request": "launch",
+            "mainClass": "sample",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "Atm",
+            "request": "launch",
+            "mainClass": "Atm",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Binary2d",
+            "request": "launch",
+            "mainClass": "Binary2d",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "Char",
+            "request": "launch",
+            "mainClass": "Char",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "Database",
+            "request": "launch",
+            "mainClass": "Database",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "binary",
+            "request": "launch",
+            "mainClass": "binary",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "character",
+            "request": "launch",
+            "mainClass": "character",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "demo",
+            "request": "launch",
+            "mainClass": "demo",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "dummy",
+            "request": "launch",
+            "mainClass": "dummy",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "leap",
+            "request": "launch",
+            "mainClass": "leap",
+            "projectName": "personal-notes_5cecf298"
+        },
+        {
+            "type": "java",
+            "name": "pivote",
+            "request": "launch",
+            "mainClass": "pivote",
+            "projectName": "personal-notes_5cecf298"
+        }
+    ]
+}

@@ -1,9 +1,9 @@
-<!-- html file
-<div>
-        <p id="context">Ajithye</p>
-        <button id="button">button</button>
-        <script src="nerve.js"></script> //this is fo to make a link between the source file to distination file
-    </div> -->
+// <!-- html file
+// <div>
+//         <p id="context">Ajithye</p>
+//         <button id="button">button</button>
+//         <script src="nerve.js"></script> //this is fo to make a link between the source file to distination file
+//     </div> -->
 
 
 //Javascript file
